@@ -20,6 +20,12 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
+        semicol: semicolon {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     conditional_layers {
@@ -42,7 +48,7 @@
             &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L      &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ ,        │ .        │ -        │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp MINUS
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &semicol  &kp DOT    &kp MINUS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                           &lt 1 TAB &mt LCTRL SPACE &mt LSHFT ENTER &lt 2 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -72,8 +78,8 @@
         //│  @       │  [       │  {       │  }       │  │       │   │  \       │  [       │  ]       │  +       │  -       │
             &kp AT     &kp LBKT   &kp LBRC   &kp RBRC   &kp PIPE       &kp BSLH  &kp LBKT   &kp RBKT   &kp PLUS   &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  !       │  #       │  &       │  %       │          │   │  /       │  (       │  )       │  =       │  *       │
-            &kp EXCL   &kp HASH   &kp AMPS   &kp PRCNT   &trans       &kp SLASH  &kp LPAR   &kp RPAR   &kp EQUAL   &kp ASTRK
+        //│  !       │  "       │  #       │  &       │    %     │   │  /       │  (       │  )       │  =       │  *       │
+            &kp EXCL   &kp DQT   &kp HASH   &kp AMPS  &kp PRCNT       &kp SLASH  &kp LPAR   &kp RPAR   &kp EQUAL   &kp ASTRK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ~       │          │          │          │          │   │  &       │  {       │   }      │  <       │   >      │
            &kp TILDE    &trans     &trans     &trans     &trans        &kp AMPS   &kp LBRC  &kp RBRC  &kp LS(COMMA) &kp LS(DOT)
