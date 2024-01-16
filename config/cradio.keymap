@@ -40,15 +40,14 @@
         };
     };
 
-    / {
-        macros {
-            double_quote: double_quote {
-                compatible = "zmk, behavior-macro";
-                #binding-cells = <0>;
-                bindings = <&macro_tap &kp DQT &kp SPACE>;
-            };
+    macros {
+        double_quote: double_quote {
+            compatible = "zmk, behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp DQT &kp SPACE>;
         };
     };
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
