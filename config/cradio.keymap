@@ -74,7 +74,7 @@
             &kp ESC    &kp N7     &kp N8     &kp N9     &trans         &kp F5   &kp LC(LARW) &kp UARW &kp LC(RARW) &kp PSCRN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│Win change│  4       │  5       │  6       │          │   │          │ LEFT     │ DOWN     │ RIGHT    │          │
-           &kt LA(TAB) &kp N4     &kp N5     &kp N6     &trans           &none    &kp LARW   &kp DARW   &kp RARW    &none
+        &kp LCTRL(LA(TAB)) &kp N4     &kp N5     &kp N6     &trans           &none    &kp LARW   &kp DARW   &kp RARW    &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  0       │  1       │  2       │  3       │          │   │          │ HOME     │          │ END      │          │
             &kp N0     &kp N1     &kp N2     &kp N3     &trans         &none     &kp HOME     &none   &kp END       &none
