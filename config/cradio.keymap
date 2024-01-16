@@ -101,7 +101,7 @@
             &kp AT     &kp LBKT   &kp LBRC   &kp RBRC   &kp PIPE       &kp BSLH  &kp LBKT   &kp RBKT   &kp PLUS   &kp QMARK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  "       │  #       │  &       │    %     │   │  /       │  (       │  )       │  =       │  *       │
-            &kp EXCL &double_quote &kp HASH  &kp AMPS  &kp PRCNT       &kp SLASH  &kp LPAR   &kp RPAR   &kp EQUAL   &kp ASTRK
+            &kp EXCL &none &kp HASH  &kp AMPS  &kp PRCNT       &kp SLASH  &kp LPAR   &kp RPAR   &kp EQUAL   &kp ASTRK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ~       │          │          │          │          │   │  &       │  {       │   }      │  <       │   >      │
            &kp TILDE    &trans     &trans     &trans     &trans        &kp AMPS   &kp LBRC  &kp RBRC  &kp LS(COMMA) &kp LS(DOT)
@@ -129,4 +129,3 @@
         };
     };
 };
- 
