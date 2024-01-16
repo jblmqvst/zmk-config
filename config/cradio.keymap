@@ -73,11 +73,11 @@
         //│ ESC      │  7       │  8       │  9       │          │   │ F5       │WORD LEFT │ UP       │WORD RIGHT│ PRNT SCRN│
             &kp ESC    &kp N7     &kp N8     &kp N9     &trans         &kp F5   &kp LC(LARW) &kp UARW &kp LC(RARW) &kp PSCRN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│Win change│  4       │  5       │  6       │          │   │ HOME     │ LEFT     │ DOWN     │ RIGHT    │  END     │
-           &kp LA(TAB) &kp N4     &kp N5     &kp N6     &trans         &kp HOME   &kp LARW   &kp DARW   &kp RARW   &kp END
+        //│Win change│  4       │  5       │  6       │          │   │          │ LEFT     │ DOWN     │ RIGHT    │          │
+           &kt LA(TAB) &kp N4     &kp N5     &kp N6     &trans           &none    &kp LARW   &kp DARW   &kp RARW    &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  0       │  1       │  2       │  3       │          │   │          │          │          │          │          │
-            &kp N0     &kp N1     &kp N2     &kp N3     &trans         &trans     &trans     &trans     &trans     &trans
+        //│  0       │  1       │  2       │  3       │          │   │          │ HOME     │          │ END      │          │
+            &kp N0     &kp N1     &kp N2     &kp N3     &trans         &none     &kp HOME     &none   &kp END       &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &kp LSHFT &lt 2 DELETE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
