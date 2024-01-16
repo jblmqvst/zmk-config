@@ -40,6 +40,15 @@
         };
     };
 
+    / {
+        macros {
+            double_quote: double_quote {
+                compatible = "zmk, behavior-macro";
+                #binding-cells = <0>;
+                bindings = <&macro_tap &kp DQT &kp SPACE>;
+            };
+        };
+    };
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -91,7 +100,7 @@
             &kp AT     &kp LBKT   &kp LBRC   &kp RBRC   &kp PIPE       &kp BSLH  &kp LBKT   &kp RBKT   &kp PLUS   &kp QMARK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  "       │  #       │  &       │    %     │   │  /       │  (       │  )       │  =       │  *       │
-            &kp EXCL   &kp DQT   &kp HASH   &kp AMPS  &kp PRCNT       &kp SLASH  &kp LPAR   &kp RPAR   &kp EQUAL   &kp ASTRK
+            &kp EXCL &double_quote &kp HASH  &kp AMPS  &kp PRCNT       &kp SLASH  &kp LPAR   &kp RPAR   &kp EQUAL   &kp ASTRK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ~       │          │          │          │          │   │  &       │  {       │   }      │  <       │   >      │
            &kp TILDE    &trans     &trans     &trans     &trans        &kp AMPS   &kp LBRC  &kp RBRC  &kp LS(COMMA) &kp LS(DOT)
@@ -119,3 +128,4 @@
         };
     };
 };
+ 
