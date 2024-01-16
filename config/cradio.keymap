@@ -44,7 +44,9 @@
         double_quote: double_quote {
             compatible = "zmk, behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp DQT &kp SPACE>;
+            bindings = 
+            <&macro_tap &kp DQT &kp SPACE>
+            ;
         };
     };
 
